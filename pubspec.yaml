@@ -1,0 +1,35 @@
+name: modern_music_player
+description: A new Flutter project for Job.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # This package is responsible for working with music files.
+  assets_audio_player: ^3.0.6
+
+  #This package for state management
+  provider: ^6.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/audio_files/
+    - assets/audio_files/thumbnails/
+    - assets/icons/
+    - assets/images/
