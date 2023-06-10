@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:modern_music_player/screens/favourites_page.dart';
 import 'package:modern_music_player/screens/home_page.dart';
-import 'package:modern_music_player/screens/navigator_page.dart';
+import 'package:modern_music_player/screens/navigator_tab.dart';
 import 'package:modern_music_player/screens/search_page.dart';
+import 'package:modern_music_player/screens/settings_page.dart';
 import 'package:modern_music_player/theme/theming.dart';
 
 void main() {
@@ -23,7 +24,8 @@ class ModernMusicPlayer extends StatelessWidget {
         NavigatorPage.id: (context) => const NavigatorPage(),
         HomePage.id: (context) => const HomePage(),
         SearchPage.id: (context) => const SearchPage(),
-        FavouritesPage.id: (context) => const FavouritesPage()
+        FavouritesPage.id: (context) => const FavouritesPage(),
+        SettingsPage.id: (context) => const SettingsPage()
       },
     );
   }

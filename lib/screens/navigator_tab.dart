@@ -5,6 +5,7 @@ import 'package:modern_music_player/data/navigator_tab_data.dart';
 import 'package:modern_music_player/screens/favourites_page.dart';
 import 'package:modern_music_player/screens/home_page.dart';
 import 'package:modern_music_player/screens/search_page.dart';
+import 'package:modern_music_player/screens/settings_page.dart';
 
 class NavigatorPage extends StatefulWidget {
   const NavigatorPage({super.key});
@@ -87,7 +88,7 @@ class _NavigatorPageState extends State<NavigatorPage>
         SearchPage(),
         Center(child: Text('Music Page Not Implemented')),
         FavouritesPage(),
-        Center(child: Text('Settings Page Not Implemented')),
+        SettingsPage(),
       ],
     );
   }
