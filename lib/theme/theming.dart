@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ModernMusicPlayerTheme {
 
-  ThemeData darkTheme() {
+  ThemeData darkTheme({Color? color}) {
     return ThemeData(
       colorScheme: ColorScheme.fromSeed(
         seedColor: Colors.deepPurple,
@@ -13,7 +13,7 @@ class ModernMusicPlayerTheme {
         elevation: 8,
         selectedColor: ColorScheme.fromSeed(seedColor: Colors.deepPurple).primary,
       ),
-      scaffoldBackgroundColor: const Color(0xff0b0015),
+      scaffoldBackgroundColor: color ?? const Color(0xff0b0015),
       useMaterial3: true,
     );
   }
