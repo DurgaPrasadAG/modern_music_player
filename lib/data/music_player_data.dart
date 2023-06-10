@@ -6,6 +6,7 @@ class MusicPlayerData {
   late final List<Audio> audios;
 
   MusicPlayerData() {
+    // Asset song path
     _assetsSongsPaths = [
       '${Constants.assetDir}/audio_files/${Constants.songNames[0]}.m4a',
       '${Constants.assetDir}/audio_files/${Constants.songNames[1]}.m4a',
@@ -14,6 +15,9 @@ class MusicPlayerData {
     _audioFiles();
   }
 
+  /*
+    List of Audio files in the asset directory with metadata.
+   */
   void _audioFiles() {
     audios = <Audio>[
       Audio(

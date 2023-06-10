@@ -59,6 +59,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Action Chips widget
   Widget buildActionChips() {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -89,6 +90,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Trending now widget
   Widget buildTrendingNow() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -121,6 +123,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Dummy list just to see Glass Polymorphism effect of Bottom Nav bar.
   Widget buildDummies() {
     return Expanded(
       child: SingleChildScrollView(
@@ -160,11 +163,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Restrict the app orientation to portrait mode.
   void lockPortraitMode() {
     SystemChrome.setPreferredOrientations(
         [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   }
 
+  // Add song to favourite page
   void favouriteSong(int index) {
     int id = int.parse(musicPlayerData.audios[index].metas.id!);
     if (favouritesController.alreadyFavourite(id)) {
@@ -176,6 +181,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  // Favourite - Filled Icon, UnFavourite - Outlined icon.
   Widget buildFavouriteIcon(int index) {
     int id = int.parse(musicPlayerData.audios[index].metas.id!);
     if (FavouritesData.songs.contains(id)) {
@@ -185,6 +191,7 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  // Can be linked with action chips. Needs only implementation.
   Widget buildActionChipsSelectedSongs() {
     return Expanded(
       child: SingleChildScrollView(
@@ -235,6 +242,10 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  /*
+    Implemented simultaneous playback with the help of objects.
+    Can Play/Pause song individual song.
+   */
   void musicPlayPause(int index) {
     if (!musicControllers[index].isAudioPlaying()) {
       musicControllers[index].playMusic(index);

@@ -36,6 +36,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
             const HeadingWidget(text: 'Favourites'),
             if (FavouritesData.songs.isNotEmpty)
               Expanded(
+                // Displays only two columns.
                 child: GridView(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
@@ -53,6 +54,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
     );
   }
 
+  // Fetch Favourite songs and Display.
   buildFavourites() {
     List<Audio> audios = MusicPlayerData().audios;
     return List.generate(FavouritesData.songs.length, (index) {
@@ -125,6 +127,7 @@ class _FavouritesPageState extends State<FavouritesPage> {
     });
   }
 
+  // Removes from the favourite songs
   void unfavouriteSong(int id) {
     setState(() {
       favouritesController.unFavourite(id);
