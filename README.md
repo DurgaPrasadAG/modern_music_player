@@ -11,3 +11,5 @@ A new Flutter project for Job.
             clicking on the play button and pause the 2nd audio file or any other combination.
 4. Write code with proper maintainable format with state management 
    (if possible use bloc structure or any other you like)
+
+![Screenshot](https://github.com/DurgaPrasadAG/modern_music_player/blob/master/screenshots/Screenshot_20230610-072247_Modern_Music_Player.png)
