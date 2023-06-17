@@ -1,6 +1,6 @@
 # modern_music_player
 
-A new Flutter project for Job.
+A new Flutter project.
 
 ## Instructions
 
@@ -13,3 +13,4 @@ A new Flutter project for Job.
    (if possible use bloc structure or any other you like)
 
 ![Screenshot](https://github.com/DurgaPrasadAG/modern_music_player/blob/master/screenshots/Screenshot_20230610-072247_Modern_Music_Player.png)
+![Screenshot](https://github.com/DurgaPrasadAG/modern_music_player/blob/master/screenshots/Screenshot_20230610-072255_Modern_Music_Player.png)
